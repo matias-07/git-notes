@@ -55,3 +55,28 @@ git stash pop # pop = apply + drop
 ```bash
 git push -u --force origin $branch
 ```
+
+- Get last changes from remote branch but don't apply them to the local branch.
+```bash
+git fetch
+```
+
+- Place changes from current branch on top of `newbase` branch.
+```bash
+git rebase $newbase
+```
+
+- Rename current branch.
+```bash
+git branch -m $newname
+```
+
+- Delete local branch.
+```bash
+git branch -D $branch
+```
+
+- Delete remote branch.
+```bash
+git push -d origin $branch
+```
